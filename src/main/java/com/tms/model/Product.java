@@ -3,10 +3,14 @@ package com.tms.model;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.sql.Timestamp;
+
 @NoArgsConstructor
 @Data
 public class Product {
-    private int id;
+    private Integer id;
     private String name;
-    private double price;
+    private Double price;
+    private Timestamp created;
+    private Timestamp updated;
 }
